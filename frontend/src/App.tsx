@@ -1,13 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import LandingPage from "./components/screens/LandingPage/LandingPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     HI
+    <div>
+      <Header />
+      <main>
+        <LandingPage />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
